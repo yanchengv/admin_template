@@ -10,12 +10,14 @@
 
 .breadcrumb-item {
   float: left; }
+
 .breadcrumb-item + .breadcrumb-item::before {
   display: inline-block;
   padding-right: 0.5rem;
   padding-left: 0.5rem;
   color: #b0bec5;
   content: "/"; }
+
 .breadcrumb-item + .breadcrumb-item:hover::before {
   text-decoration: underline; }
 .breadcrumb-item + .breadcrumb-item:hover::before {
@@ -32,20 +34,7 @@
   clear: both;
   content: ""; }
 
-.breadcrumb-item {
-  float: left; }
-.breadcrumb-item + .breadcrumb-item::before {
-  display: inline-block;
-  padding-right: 0.5rem;
-  padding-left: 0.5rem;
-  color: #b0bec5;
-  content: "/"; }
-.breadcrumb-item + .breadcrumb-item:hover::before {
-  text-decoration: underline; }
-.breadcrumb-item + .breadcrumb-item:hover::before {
-  text-decoration: none; }
-.breadcrumb-item.active {
-  color: #b0bec5; }
+
 .breadcrumb-menu {
   position: absolute;
   top: 0;
