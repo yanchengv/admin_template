@@ -38,6 +38,7 @@
 .breadcrumb-menu {
   position: absolute;
   top: 0;
+  padding-right: 50px;
   right: 1rem; }
 .breadcrumb-menu::before {
   display: none; }
@@ -61,3 +62,7 @@
   position: relative;
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #cfd8dc; }
+
+.breadcrumb-collapse-s {
+  padding: 10px 15px
+}
