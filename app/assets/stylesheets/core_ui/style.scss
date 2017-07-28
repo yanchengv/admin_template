@@ -1,18 +1,8 @@
-/**
- * CoreUI - Open Source Bootstrap Admin Template
- * @version v1.0.0-alpha.6
- * @link http://coreui.io
- * Copyright (c) 2017 creativeLabs Łukasz Holeczek
- * @license MIT
- */
-/*! normalize.css v5.0.0 | MIT License | github.com/necolas/normalize.css */
-
-
-body {
-  margin: 0;
-  background-color: #e4e5e6;
-  color: #263238;
+body{
+  background: url("login_bg.jpg") no-repeat center center fixed;
+  background-size: cover;
 }
+
 
 main {
   display: block; }
