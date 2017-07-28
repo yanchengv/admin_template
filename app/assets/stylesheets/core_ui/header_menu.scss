@@ -1,0 +1,27 @@
+$h-color1: rgba(0, 0, 0, 0.3);
+$h-color2: #000000;
+@mixin nav-header-menu-item {
+  padding-top: 15px;
+
+}
+.app-header .nav-item a:hover {
+  color: $h-color2;
+}
+
+.app-header .d-md-down-none .nav-item {
+  @include nav-header-menu-item;
+}
+
+.app-header  .nav-left-menu a{
+  color: $h-color1;
+}
+
+.app-header .navbar-nav-right {
+  @include nav-header-menu-item;
+  padding-right: 50px;
+  float: right;
+}
+
+.app-header .navbar-nav-right .nav-link span{
+  color: $h-color1;
+}
