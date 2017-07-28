@@ -16,6 +16,8 @@ $h-color2: #000000;
   color: $h-color1;
 }
 
+
+//导航右侧菜单
 .app-header .navbar-nav-right {
   @include nav-header-menu-item;
   padding-right: 50px;
@@ -25,3 +27,20 @@ $h-color2: #000000;
 .app-header .navbar-nav-right .nav-link span{
   color: $h-color1;
 }
+.app-header .navbar-nav-right .dropdown-menu-right {
+  padding: 0;
+}
+.app-header .navbar-nav-right .dropdown-menu-right a {
+  color: $h-color2;
+  display: block;
+  position: relative;
+  padding: 10px 20px;
+  border-bottom: 1px solid #cfd8dc;
+  text-align: center;
+  text-decoration: none;
+
+}
+.app-header .navbar-nav-right .dropdown-menu-right a:hover{
+  background-color: #eceff1;
+}
+
