@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   root 'homes#index'
   get 'login' => 'sessions#new'
-
+  get 'logout' => 'sessions#destroy'
   resources :sessions
   resources :homes
   resources :admins
