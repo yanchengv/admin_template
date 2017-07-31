@@ -40,7 +40,7 @@ module Menus
                   children: [
                       {
                           name: '客户列表',
-                          url: '#'
+                          url: '/admins'
 
                       },
                       {
@@ -72,7 +72,7 @@ module Menus
                   children: [
                       {
                           name: '管理员列表',
-                          url: '#'
+                          url: '/admins'
 
                       }
                   ]
