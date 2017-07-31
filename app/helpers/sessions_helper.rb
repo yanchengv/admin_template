@@ -6,7 +6,7 @@ module SessionsHelper
   end
 
   def current_user
-    @current_user ||= Admin.find(session[:admin_id])
+    @current_user ||= Admin.where(id: session[:admin_id]).first
   end
 
   # 如果用户已登录，返回 true，否则返回 false
