@@ -1,31 +1,27 @@
 <div class="sidebar">
   <nav class="sidebar-nav">
     <ul class="nav">
-      <li class="nav-item">
-        <a class="nav-link" href="/"><i class="glyphicon glyphicon-list-alt"></i> 主菜单
-          <!--<span class="badge badge-info">NEW</span>-->
-        </a>
-      </li>
-      <li class="nav-item nav-dropdown">
-        <a class="nav-link nav-dropdown-toggle" href="#"><i class="glyphicon glyphicon-list-alt"></i>菜单一 </a>
-        <ul class="nav-dropdown-items">
-          <li class="nav-item">
-            <a class="nav-link" href="/homes/new"><i class="glyphicon glyphicon-list-alt"></i>子菜单</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="glyphicon glyphicon-list-alt"></i>子菜单</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="glyphicon glyphicon-list-alt"></i>子菜单</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="glyphicon glyphicon-list-alt"></i>子菜单</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"><i class="glyphicon glyphicon-list-alt"></i>子菜单</a>
-          </li>
-        </ul>
-      </li>
+      <% @side_menus && @side_menus.each do |sm| %>
+          <% if sm[:children].present? %>
+              <li class="nav-item nav-dropdown">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="glyphicon glyphicon-list-alt"></i><%= sm[:parent] %>
+                </a>
+                <ul class="nav-dropdown-items">
+                  <% sm[:children].each do |item| %>
+                      <li class="nav-item">
+                        <a class="nav-link" href="<%= item[:url] %>"><i class="glyphicon glyphicon-list-alt"></i><%= item[:name] %>
+                        </a>
+                      </li>
+                  <% end %>
+                </ul>
+              </li>
+          <% else %>
+              <li class="nav-item">
+                <a class="nav-link" href="/"><i class="glyphicon glyphicon-list-alt"></i><%= sm[:parent] %> </a>
+              </li>
+          <% end %>
+      <% end %>
+
     </ul>
   </nav>
 </div>
