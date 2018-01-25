@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170728054018) do
+ActiveRecord::Schema.define(version: 20180125075648) do
 
   create_table "admins", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "username",                                 comment: "昵称，用户名"
@@ -23,6 +23,13 @@ ActiveRecord::Schema.define(version: 20170728054018) do
     t.datetime "last_login_time",                          comment: "最后登录时间"
     t.datetime "created_at",                  null: false
     t.datetime "updated_at",                  null: false
+  end
+
+  create_table "authorities", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.string   "name",                    comment: "权限名称"
+    t.string   "route_name",              comment: "路由，controller#action;例如users#create"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
 end

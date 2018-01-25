@@ -15,6 +15,9 @@
     <div class="btn-group" role="group" aria-label="Button group with nested dropdown">
       <a class="btn btn-secondary" href="#"><i class="icon-speech"></i></a>
       <a class="btn btn-secondary" data-toggle="collapse" href="#collapseSearch" aria-expanded="false" aria-controls="collapseExample"><i class="icon-settings"></i> &nbsp;查询</a>
+      <% if  @bread_menu && @bread_menu[:add] %>
+          <a class="btn btn-secondary" href="<%= @bread_menu[:add] %>"><i class="icon-settings"></i> &nbsp;添加</a>
+      <% end %>
       <a class="btn btn-secondary" href="/"><i class="icon-graph"></i> &nbsp;返回</a>
     </div>
   </li>

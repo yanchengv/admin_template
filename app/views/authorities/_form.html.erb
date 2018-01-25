@@ -1,0 +1,12 @@
+<div class="panel panel-default" >
+  <div class="panel-body panel-form-center">
+    <%= form_for @authority do |f| %>
+        <%= f.label :名称 %>:
+        <%= f.text_field :name,required: 'true',placeholder: '创建管理员'%>
+        <%= f.label :权限 %>:
+        <%= f.text_field :route_name ,required: 'true',placeholder: 'admins#create'%>
+        <%= f.submit '保存', class: 'btn-info sf-submit' %>
+        <%= link_to '取消', "", class: 'btn btn-default ml_20', role: 'button' %>
+    <% end %>
+  </div>
+</div>

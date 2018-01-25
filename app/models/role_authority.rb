@@ -1,0 +1,2 @@
+class RoleAuthority < ApplicationRecord
+end

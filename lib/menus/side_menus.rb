@@ -86,8 +86,8 @@ module Menus
                           url: '/roles'
                       },
                       {
-                          name: '资源管理',
-                          url: '#'
+                          name: '权限列表',
+                          url: '/authorities'
                       }
                   ]
               },

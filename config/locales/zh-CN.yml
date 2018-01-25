@@ -1,0 +1,6 @@
+zh-CN:
+  routes:
+    controller:
+      admins: "管理员"
+      homes: "主页"
+
